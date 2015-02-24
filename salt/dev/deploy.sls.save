@@ -1,0 +1,6 @@
+Momcat:
+    - war_deployed
+    - name: /MyApp
+    - war: salt://MyApp.war
+    - require:
+      - tomcat: wait-for-tomcatmanager

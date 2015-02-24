@@ -1,0 +1,7 @@
+move_file:
+  file.copy:
+    - makedirs: true
+    - name: /var/opt/properties/person/person.properties
+    - source: 
+       - /var/cache/salt/master/minions/var/opt/properties/person/person.properties
+    - mode : 777

@@ -1,0 +1,10 @@
+write_ip:
+  file.managed:
+    - makedirs: true
+    - name: /var/opt/properties/person/person.properties
+    - source: 
+       - salt://person.properties
+    - mode : 777
+    - template: jinja
+    - context:
+        database_ip: {{ salt['network.interfaces']()['eth0']['inet'][0]['address'] }}

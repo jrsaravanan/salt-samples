@@ -1,0 +1,30 @@
+my-rackspace-config:
+  # Set the location of the salt-master
+  #
+  minion:
+    master: <ip>
+
+  # Configure Rackspace using the OpenStack plugin
+  #
+  identity_url: 'https://identity.api.rackspacecloud.com/v2.0/tokens'
+  compute_name: cloudServersOpenStack
+  protocol: ipv4
+
+  # Set the compute region:
+  #
+  compute_region: IAD
+
+  # Configure Rackspace authentication credentials
+  #
+  user: 
+  tenant: 
+  apikey: 
+  provider: openstack
+
+
+my-rackspace-config:
+  provider: rackspace
+  # The Rackspace login user
+  user: 
+  # The Rackspace user's apikey
+  apikey: 

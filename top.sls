@@ -1,5 +1,0 @@
-base:
-  '*':
-    #- mysql
-    #- tomcat
-    - apache

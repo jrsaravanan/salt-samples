@@ -1,0 +1,11 @@
+openstack_512:
+    provider: my-rackspace-config
+    #size: 512 MB Standard
+    image: Ubuntu 12.04 LTS (Precise Pangolin)
+
+openstack_ub:
+    provider: my-rackspace-config
+    #size: 512 MB Standard
+    image: Ubuntu 14.04 LTS (Trusty Tahr)
+    minion:
+      master: 104.130.172.108
