@@ -29,7 +29,7 @@ my-rackspace-config:
   # The Rackspace user's apikey
   apikey: 
   compute_region: ORD
-  tenant: 554353
+  tenant: 
 
 dfw-rackspace-config:
   provider: rackspace
